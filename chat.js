@@ -241,7 +241,7 @@ async function processGeminiMessage(message) {
 
 // 3. API Call ke Google Gemini (Tetap ada untuk CS/Manual Chat)
 async function getGeminiResponse(userMessage) {
-    const API_KEY = "AIzaSyDneXFNPqpqdtiecUSF1B7KMo7zmE6GYeI";
+    const API_KEY = "PUT YOUR GEMINI API KEY";
     const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
     const currentLang = localStorage.getItem('app_language') || 'id';
     let systemInstruction = translations[currentLang]['chatbot.system_instruction'];
